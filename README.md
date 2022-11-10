@@ -2,6 +2,10 @@
 
 - npx create-next-app -e with-tailwindcss twitter
 
+#####
+
+- @heroicons/react: 1.0.6 fix. ts support
+
 ---
 
 # Next.js + Tailwind CSS Example

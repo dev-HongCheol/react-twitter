@@ -3,9 +3,20 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    parserOptions: {
+      project: './tsconfig.json',
+    },
     ecmaFeatures: {
       jsx: true,
     },
@@ -13,10 +24,4 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier'],
-  rules: {
-    'react/jsx-filename-extension': [
-      1,
-      { extensions: ['.js', '.jsx', '.ts', 'tsx'] },
-    ], // 확장자 설정
-  },
 };
