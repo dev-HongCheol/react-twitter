@@ -8,8 +8,10 @@
   "dependencies": {
     "@heroicons/react": "1.0.6",
     "next": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-twitter-embed": "^4.0.4"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

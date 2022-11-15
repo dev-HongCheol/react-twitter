@@ -3,15 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'airbnb',
-    'airbnb-typescript',
-    'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-  ],
+  extends: ['airbnb', 'airbnb-typescript'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     parserOptions: {
@@ -23,5 +15,5 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'eslint-plugin-prettier'],
+  plugins: ['react', 'prettier-plugin-tailwindcss'],
 };
